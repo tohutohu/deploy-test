@@ -1,0 +1,10 @@
+version: "2"
+services:
+  app:
+    build: .
+    expose:
+      - "1323"
+    environment:
+      VIRTUAL_HOST: test.to-hutohu.com
+      LETSENCRYPT_HOST: test.to-hutohu.com
+      LETSENCRYPT_EMAIL: tohu.soy@gmail.com
