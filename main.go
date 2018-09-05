@@ -14,7 +14,7 @@ func main() {
 	})
 
 	e.GET("/env", func(c echo.Context) error {
-		return c.JSONPretty(http.StatusOK, os.Environ())
+		return c.JSONPretty(http.StatusOK, os.Environ(), "  ")
 	})
 
 	e.Start(":1323")
